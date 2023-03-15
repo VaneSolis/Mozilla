@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ancho {
+    max-width: 1300px;
+    margin: auto;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 3px 10px #ccc;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+.todo {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+figure img {
+    width: 100px;
+}
+.menu {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-right: 300px; */
+}
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+
+}
+.btn_descarga {
+    border: 2px blue solid;
+    color: blue;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    display: inline;
+}
+.contenedor_menu {
+    display: none;
+}
+.contenedorideas {
+    height: 500px;
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenedorideas article {
+    max-width: 500px;
+    padding: 20px;
+}
+.contenedorideas h2{
+    color: #271948;
+    font-size: 60px;
+    text-align:left;
+}
+.contenedorideas img {
+    width: 500px;
+}
+.btn_azul {
+    text-decoration: none;
+    border: 1px blue solid;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+}
+.contenedor_hacemos {
+    padding-top: 20px;
+    display: flex;
+    flex: row;
+    justify-content:center;
+    align-items:flex-start;
+    gap: 60px;
+    background-color: #ededf0;
+}
+.contenedor_hacemos img {
+    width: 300px;
+}
+.contenedor_hacemos article {
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+.contenedor_hacemos h2 {
+    font-size: 48px;
+}
+.contenedor_hacemos p {
+    font-size: 16px; }
+.contenedor_nuestra {
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: stretch;
+}
+.contenedor_nuestra h2 {
+    font-size: 48px;
+}
+.contenedor_nuestra p {
+    font-size: 16px;
+}
+.contenedor_nuestra article {
+    margin-top: 30px;
+    max-width: 500px;
+}
+.influencia {
+    padding: 40px;
+}
+.innovaciones {
+    padding: 40px 40px 40px 80px;
+    border-left: #ededf0 2px solid;
+}
+.lista {
+    margin-left: 30px;
+}
+.info {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.info article {
+    width: 320px;
+    padding: 10px;
+    text-align: center;
+}
+.info figure {
+    width: 120px;
+    margin: auto;
+}
+.info figure img {
+    width: 100%;
+}
+.info h2 {
+    text-decoration: underline;
+    text-decoration-color: #0360df;
+    text-decoration-thickness: 5px;
+}
+.info h2:hover {
+    text-decoration: none;
+}
+.contenedorboletin {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+.contenedorboletin figure{
+    max-width: 400px;
+}
+.contenedorboletin figure img {
+    width: 100%;
+}
+.contenedorboletin article{
+    max-width: 400px;
+    padding: 10px;
+}
+.contenedorboletin h2 {
+    font-size: 48px;
+}
+.contenedorboletin p {
+    font-size: 16px;
+}
+
+.correo {
+    width: 350px;
+    height: 30px;
+}
+button {
+    padding: 10px 40px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+footer img {
+    width: 100px;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: black;
+    padding: 20px;
+}
+footer h4 {
+    font-size: 16px;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+@media screen and (max-width:900px) {
+    header {
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .contenedor_menu {
+        display: flex;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    #iconomenu {
+        color: black;
+    }
+    .todo {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    figure {
+        order: 1;
+    }
+    .menu {
+       display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        order: 3;
+        width: 100%;
+    }
+    .menu a {
+        display: block;
+        border-bottom: #ccc 1px solid;
+    }
+    .btn_descarga {
+        order: 2;
+    }
+    .contenedor_hacemos {
+        flex-direction: row-reverse;
+    }
+    .contenedorboletin {
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+    }
+}
+@media screen and (max-width:800px) {
+.contenedorideas {
+        justify-content: space-between;
+        align-items: center;
+    }
+.contenedorideas img {
+        width: 300px;
+    }
+.contenedor_nuestra {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+.info {
+    align-items: center;
+    flex-direction: column;
+}
+.contenedorboletin {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+}
+footer {
+    flex-direction: column;
+    align-items: flex-start;
+}
+}
+@media screen and (max-width:500px) {
+    .contenedorideas {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedorideas figure {
+        display: none;
+    }
+    .contenedor_hacemos {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content:center;
+        align-items:center;
+        gap: 60px;
+        background-color: #ededf0;
+    }
+    .contenedorboletin {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

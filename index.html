@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2ee0245f3d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Mozilla</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="todo ">
+            <figure>
+                <img src="imagenes/logo-mozilla.svg">
+            </figure>
+            <nav class="menu" id="cajamenu">
+             <a href="#">Navegadores Firefox</a>
+             <a href="#" >Productos</a>
+             <a href="#">¿Quiénes somos?</a>
+             <a href="#">Innovación</a>
+            </nav>
+            <a href="#" class="btn_descarga">Descarga Firefox</a>
+        </div>
+        <div class="contenedor_menu">
+            <a href="#" id="iconomenu">
+                <i class="fas fa-bars fa-1x"></i>
+            </a>
+            </div>
+    </header>
+    <section class="contenedorideas">
+        <article>
+            <h2>Vuelve a las buenas ideas - más rápido</h2>
+            <br>
+            <a href="#" class="btn_azul">Obtén el nuevo Firefox</a>
+        </article>
+     <figure>
+        <img src="imagenes/celular.png" alt="">
+     </figure>
+    </section>
+    <section class="contenedor_hacemos">
+        <figure>
+            <img src="imagenes/dino.svg" alt="">
+        </figure>
+        <article class="hacemosinternet">
+            <h2 class="titulo1"> Hacemos Internet más seguro, saludable y rápido para siempre.</h2>
+            <p>Mozilla es la organización sin ánimo de lucro responsable de Firefox, el navegador alternativo original. Creamos productos y políticas para mantener Internet al servicio de las personas, no del beneficio.</p>
+        </article>
+    </section>
+    <section class="contenedor_nuestra">
+        <article class="influencia">
+            <h2>Nuestra influencia</h2>
+            <br>
+            <p>Cuando usas Firefox ayudas a Mozilla a luchar contra la desinformación en Internet, enseñar habilidades digitales y hacerlo más humano en áreas de comentarios. Echa un vistazo para ayudar a crear un internet más saludable.</p>
+            <br>
+            <ul class="lista">
+                    <li><a href="#">Mozilla Information Trust Initiative</a></li>
+                    <li><a href="#">Empoderando a las mujeres en línea</a></li>
+                    <li><a href="#">proyecto Coral</a> </li>
+                    <li><a href="#">Lee nuestro Reporte de Salud de Internet</a></li>
+            </ul>
+        </article>
+        <article class="innovaciones">
+            <h2>Nuestras innovaciones</h2>
+            <br>
+            <p>Con la web como nuestra plataforma, creamos tecnologías abiertas e innovadoras que permiten a los desarrolladores trabajar sin ecosistemas corporativos cerrados y crear experiencias de web más rápidas y seguras para todos.</p>
+            <br>
+            <ul class="lista">
+                <li><a href="#">Common Voice</a></li>
+                    <li><a href="#">Plataforma de realidad virtual</a></li>
+            </ul>
+        </article>
+    </section>
+    <section class="info">
+        <article>
+            <figure>
+                <img src="imagenes/extensiones.png" alt="">
+            </figure>
+            <h2>Extensiones</h2>
+            <p>Personaliza Firefox con tus extras favoritos como gestores de contraseñas, bloqueadores de anuncios y mucho más.</p>
+        </article>
+
+        <article>
+            <figure>
+                <img src="imagenes/empleos.png" alt="">
+            </figure>
+            <h2>Empleos</h2>
+            <p>Infórmate de las ventajas de trabajar en Mozilla y echa un vistazo a las vacantes que hay en todo el mundo.</p>
+        </article>
+
+        <article>
+            <figure>
+                <img src="imagenes/necesitasayuda.png" alt="">
+            </figure>
+            <h2>¿Necesitas ayuda?</h2>
+            <p>Obtén respuestas de nuestro equipo de ayuda a todas tus preguntas sobre Firefox y todos los productos Mozilla.</p>
+        </article>
+    </section>
+    <section class="contenedorboletin">
+        <figure>
+            <img src="imagenes/newsletter.png" alt="">
+        </figure>
+        <article>
+            <h2>Amor por la web</h2>
+            <br>
+            <p>Recibe los boletines de Mozilla y ayúdanos a mantener la web abierta y gratuita.</p>
+            <br>
+            <form action="">
+                <label for="">Tu dirección de correo electrónico</label>
+                <br><br>
+                <input class="correo" type="text" placeholder="tunombre@ejemplo.com">
+                <br><br>
+                <button type="submit">Regístrate ahora</button>
+            </form>
+        </article>
+    </section>
+</body>
+<footer>
+    <div>
+        <img src="imagenes/logo-mozilla.svg" alt="">
+        <br>
+        <h4>Compañía</h4>
+        <br>
+            <a href="#">Manifiesto de Mozilla</a>
+            <br>
+            <a href="#">Área de prensa</a>
+            <br>
+            <a href="#">Blog corporativo</a>
+            <br>
+            <a href="#">Empleos</a>
+            <br>
+            <a href="#">Contacto</a>
+            <br>
+            <a href="#">Contacto</a>
+    </div>
+    <div>
+        <h4>Seguir @Firefox</h4>
+        <br>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>
+</footer>
+<script>
+    $("#iconomenu").click(function(){$("#cajamenu").slideToggle()})
+</script>
+</html>
